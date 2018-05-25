@@ -23,7 +23,7 @@ defmodule JumperTest do
   end
 
   test "slot(0xA9993E364706816ABA3E25717850C26C9CD0D89D, 5)" do
-    assert Jumper.slot(0xA9993E364706816ABA3E25717850C26C9CD0D89D, 5) == 5
+    assert Jumper.slot(0xA9993E364706816ABA3E25717850C26C9CD0D89D, 5) == 2
   end
 
   test "negative buckets" do

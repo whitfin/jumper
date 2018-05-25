@@ -28,7 +28,7 @@ defmodule Jumper do
   @jump 1 <<< 31
 
   # magic number use for jumping
-  @mage 0x27BB2EE687B0B000
+  @mage 0x27BB2EE687B0B0FD
 
   # a 64 bit mask for wrapping
   @mask 0xFFFFFFFFFFFFFFFF
