@@ -64,6 +64,5 @@ defmodule Jumper do
   end
 
   # Exit clause for jump hashing, which just emits the bucket
-  defp jump_consistent_hash(_key, _buckets, bucket, _j),
-    do: bucket
+  defp jump_consistent_hash(_key, _buckets, bucket, _j), do: bucket
 end
