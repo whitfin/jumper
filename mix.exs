@@ -30,6 +30,9 @@ defmodule Jumper.MixProject do
         source_ref: "master",
         source_url: @url_github
       ],
+      test_coverage: [
+        tool: ExCoveralls
+      ],
       preferred_cli_env: [
         docs: :docs,
         bench: :bench,
