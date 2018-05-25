@@ -25,7 +25,6 @@ before_install:
   - mix local.rebar --force
   - mix deps.get
 script:
-  - mix credo --all --format=oneline
   - mix coveralls.travis --trace
 after_success:
   - mix bench
