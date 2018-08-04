@@ -12,8 +12,6 @@ defmodule Jumper do
       4
       iex> Jumper.slot(5000, 12)
       4
-      iex> Jumper.slot(5000, 13)
-      4
 
   This can be used for routing inside systems where destinations change often and
   can come and go (so there's a variable number of destinations). This is the main
@@ -47,8 +45,6 @@ defmodule Jumper do
       4
       iex> Jumper.slot(5000, 12)
       4
-      iex> Jumper.slot(5000, 13)
-      4
   """
   @spec slot(key :: integer, buckets :: integer) :: integer
   def slot(key, buckets) when is_integer(key) and is_integer(buckets),
@@ -60,7 +56,7 @@ defmodule Jumper do
   defp jump_consistent_hash(key, buckets, _bucket, j) when j < buckets do
     new_key = key * @mage + 1 &&& @mask
     new_jump = trunc((j + 1) * (@jump / ((new_key >>> 33) + 1)))
-    jump_consistent_hash(new_key, buckets - 1, j, new_jump)
+    jump_consistent_hash(new_key, buckets, j, new_jump)
   end
 
   # Exit clause for jump hashing, which just emits the bucket
