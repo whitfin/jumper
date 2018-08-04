@@ -63,7 +63,7 @@ defmodule Jumper.MixProject do
       {:benchee, "~> 0.11", optional: true, only: [:bench]},
       {:benchee_html, "~> 0.4", optional: true, only: [:bench]},
       # Documentation dependencies
-      {:ex_doc, "~> 0.16", optional: true, only: [:docs]}
+      {:ex_doc, "~> 0.19", optional: true, only: [:docs]}
     ]
   end
 end
