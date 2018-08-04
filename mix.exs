@@ -1,6 +1,7 @@
 defmodule Jumper.MixProject do
   use Mix.Project
 
+  @version "1.0.1"
   @url_docs "http://hexdocs.pm/jumper"
   @url_github "https://github.com/whitfin/jumper"
 
@@ -23,11 +24,11 @@ defmodule Jumper.MixProject do
         },
         maintainers: ["Isaac Whitfield"]
       },
-      version: "1.0.0",
+      version: @version,
       elixir: "~> 1.2",
       deps: deps(),
       docs: [
-        source_ref: "master",
+        source_ref: "v#{@version}",
         source_url: @url_github
       ],
       test_coverage: [
