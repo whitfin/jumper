@@ -3,7 +3,7 @@ defmodule Jumper do
   Jump consistent hashing for Elixir, without the need of C compilers.
 
   This module exposes nothing beyond a simple `slot/2`, used to slot a key into a
-  ange of buckets `[0, buckets)`. This offers a fairly good consistency rate with
+  range of buckets `[0, buckets)`. This offers a fairly good consistency rate with
   changing bucket counts, such that:
 
       iex> Jumper.slot(5000, 10)
