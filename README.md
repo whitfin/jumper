@@ -1,5 +1,5 @@
 # Jumper
-[![Coverage Status](https://img.shields.io/coveralls/whitfin/jumper.svg)](https://coveralls.io/github/whitfin/jumper) [![Unix Build Status](https://img.shields.io/travis/whitfin/jumper.svg?label=unix)](https://travis-ci.org/whitfin/jumper) [![Windows Build Status](https://img.shields.io/appveyor/ci/whitfin/jumper.svg?label=win)](https://ci.appveyor.com/project/whitfin/jumper) [![Hex.pm Version](https://img.shields.io/hexpm/v/jumper.svg)](https://hex.pm/packages/jumper) [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://hexdocs.pm/jumper/)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/whitfin/jumper/ci.yml?branch=main)](https://github.com/whitfin/jumper/actions) [![Coverage Status](https://img.shields.io/coveralls/whitfin/jumper.svg)](https://coveralls.io/github/whitfin/jumper) [![Hex.pm Version](https://img.shields.io/hexpm/v/jumper.svg)](https://hex.pm/packages/jumper) [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://hexdocs.pm/jumper/)
 
 ### Installation
 
@@ -41,7 +41,7 @@ Typical results are a microsecond or two, based on the number of buckets you're 
 
 If you feel something can be improved, or have any questions about certain behaviours or pieces of implementation, please feel free to file an issue. Proposed changes should be taken to issues before any PRs to avoid wasting time on code which might not be merged upstream.
 
-If you *do* make changes to the codebase, please make sure you test your changes thoroughly, and include any unit tests alongside new or changed behaviours. Cachex currently uses the excellent [excoveralls](https://github.com/parroty/excoveralls) to track code coverage.
+If you *do* make changes to the codebase, please make sure you test your changes thoroughly, and include any unit tests alongside new or changed behaviours. jumper currently uses the excellent [excoveralls](https://github.com/parroty/excoveralls) to track code coverage.
 
 ```bash
 $ mix test
