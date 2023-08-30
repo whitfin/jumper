@@ -12,7 +12,6 @@ defmodule Jumper.MixProject do
       description: "Jump consistent hash implementation in Elixir",
       package: %{
         files: [
-          "config",
           "lib",
           "mix.exs",
           "LICENSE"
