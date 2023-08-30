@@ -20,7 +20,7 @@ defmodule Jumper do
   This implementation is based on the algorithm described in the original paper
   found [here](https://arxiv.org/ftp/arxiv/papers/1406/1406.2294.pdf).
   """
-  use Bitwise
+  import Bitwise
 
   # the jump count
   @jump 1 <<< 31

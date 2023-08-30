@@ -58,12 +58,12 @@ defmodule Jumper.MixProject do
   defp deps do
     [
       # Testing dependencies
-      {:excoveralls, "~> 0.8", optional: true, only: [:dev, :test]},
+      {:excoveralls, "~> 0.17", optional: true, only: [:dev, :test]},
       # Benchmarking dependencies
-      {:benchee, "~> 0.11", optional: true, only: [:bench]},
-      {:benchee_html, "~> 0.4", optional: true, only: [:bench]},
+      {:benchee, "~> 1.1", optional: true, only: [:bench]},
+      {:benchee_html, "~> 1.0", optional: true, only: [:bench]},
       # Documentation dependencies
-      {:ex_doc, "~> 0.19", optional: true, only: [:docs]}
+      {:ex_doc, "~> 0.30", optional: true, only: [:docs]}
     ]
   end
 end
