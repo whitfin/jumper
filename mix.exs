@@ -37,9 +37,9 @@ defmodule Jumper.MixProject do
       preferred_cli_env: [
         docs: :docs,
         bench: :bench,
-        coveralls: :test,
-        "coveralls.html": :test,
-        "coveralls.travis": :test
+        coveralls: :cover,
+        "coveralls.html": :cover,
+        "coveralls.github": :cover
       ],
       aliases: [
         bench: "run benchmarks/main.exs"
@@ -58,7 +58,7 @@ defmodule Jumper.MixProject do
   defp deps do
     [
       # Testing dependencies
-      {:excoveralls, "~> 0.17", optional: true, only: [:dev, :test]},
+      {:excoveralls, "~> 0.17", optional: true, only: [:cover]},
       # Benchmarking dependencies
       {:benchee, "~> 1.1", optional: true, only: [:bench]},
       {:benchee_html, "~> 1.0", optional: true, only: [:bench]},
