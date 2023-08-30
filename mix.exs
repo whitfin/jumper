@@ -1,7 +1,7 @@
 defmodule Jumper.MixProject do
   use Mix.Project
 
-  @version "1.0.1"
+  @version "1.0.2"
   @url_docs "http://hexdocs.pm/jumper"
   @url_github "https://github.com/whitfin/jumper"
 
